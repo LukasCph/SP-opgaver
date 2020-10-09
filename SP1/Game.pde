@@ -311,14 +311,14 @@ private void updateHealthPacks()
         --playerTwoLife;
       }
     }
-
+      //We have a collision (player one)
     if (healthPacks[healthPackCount].getX() == player.getX() && healthPacks[healthPackCount].getY() == player.getY())
     {
       playerLife+=10;
       playerScore++;
       healthPackCount++;
     }
-
+      //We have a collision (player two)
     if (healthPacks[healthPackCount].getX() == playerTwo.getX() && healthPacks[healthPackCount].getY() == playerTwo.getY())
     {
       playerTwoLife+=10;
